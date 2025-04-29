@@ -3,7 +3,7 @@
 # Install basics
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
 sudo apt update
-sudo apt install make gcc ripgrep unzip git xclip neovim lsd npm cargo
+sudo apt install make gcc ripgrep unzip git xclip neovim lsd npm cargo gh
 
 # Install Go
 curl -L https://go.dev/dl/go1.24.2.linux-amd64.tar.gz -o go1.24.2.linux-amd64.tar.gz
@@ -16,3 +16,5 @@ git config --global user.email "brooksyhap@gmail.com"
 git config --global init.defaultBranch "main"
 
 git clone https://github.com/sam-brook/nvim_config.git ~/.config/nvim
+
+gh auth login
